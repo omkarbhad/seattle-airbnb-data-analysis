@@ -13074,96 +13074,50 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Using-CRISP-DM-for-solving-the-Seattle-AirBnB-Dataset">Using CRISP-DM for solving the Seattle AirBnB Dataset<a class="anchor-link" href="#Using-CRISP-DM-for-solving-the-Seattle-AirBnB-Dataset">&#182;</a></h1>
 </div>
 </div>
-
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Business-Understanding">Business Understanding<a class="anchor-link" href="#Business-Understanding">&#182;</a></h1>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before AirBnB, it would have been a nerve wracking prospect to let strangers stay in your home. But now day by day, the popularity of AirBnB and other vacation homes is rising. They become a Profitable investment to many Investors.
+The company has changed the relationship between the house-owner and the renter. Most of us are familiar with the experience as guests, but today I’ll be answering the questions from the Investor’s or Stakeholder’s point of view.</p>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following Questions were answered in the Blog:</p>
+<ul>
+<li>In which Season of the Year, the occupancy is more ?</li>
+<li>How much the Prices change per month ?</li>
+<li>What are the top favorite Neighborhoods in Seattle ?</li>
+<li>What are the key Factors that influence the Price of an AirBnB ?</li>
+<li>How the AirBnBs are distributed in the city ?</li>
+</ul>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Understanding">Data Understanding<a class="anchor-link" href="#Data-Understanding">&#182;</a></h1>
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13201,7 +13155,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting the list_id and date from the reviews data</span>
+<span class="n">reviews</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -13214,7 +13169,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calendar</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting the list_id, price and date from the reviews data</span>
+<span class="n">calendar</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -13227,7 +13183,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reviews Data has 84849 rows and 2 columns</span>
+<span class="n">reviews</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
@@ -13260,7 +13217,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calendar</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calender Data has 1393570 rows and 3 columns</span>
+<span class="n">calendar</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
@@ -13293,11 +13251,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_count</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
-<span class="n">freq_index</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
-<span class="n">frequency</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">freq_count</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">freq_index</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;No_of_Reservations&#39;</span><span class="p">])</span>
-<span class="n">reservation_frequency_annual</span> <span class="o">=</span> <span class="n">frequency</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">reservation_frequency_annual</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Choosing the required columns</span>
+<span class="n">listings_df</span> <span class="o">=</span> <span class="n">listings</span><span class="p">[[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">]]</span>
+<span class="n">listings_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13315,6 +13271,188 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>neighbourhood</th>
+      <th>city</th>
+      <th>state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All the cities in the dataset</span>
+<span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Seattle                  3810
+Seattle                     2
+West Seattle                2
+Phinney Ridge Seattle       1
+西雅图                         1
+seattle                     1
+Ballard, Seattle            1
+Name: city, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is one strange value to be removed here</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>WA    3817
+wa       1
+Name: state, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For No of Reservations </span>
+<span class="n">freq_count</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+<span class="c1"># For Index</span>
+<span class="n">freq_index</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+
+<span class="c1"># Combining into a Dataframe</span>
+<span class="n">frequency</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">freq_count</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">freq_index</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;No_of_Reservations&#39;</span><span class="p">])</span>
+<span class="c1"># Arrange the Data in the Yearly format</span>
+<span class="n">reservation_frequency_annual</span> <span class="o">=</span> <span class="n">frequency</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1">#This Data shows the number of reservations per year from reviews data</span>
+<span class="n">display</span><span class="p">(</span><span class="n">reservation_frequency_annual</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -13382,13 +13520,19 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count_cal</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For No of Reservations </span>
+<span class="n">count_cal</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+<span class="c1"># For Index</span>
 <span class="n">index_cal</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+
+<span class="c1"># Combining into a Dataframe</span>
 <span class="n">calender_freq</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">count_cal</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">index_cal</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Records&#39;</span><span class="p">])</span>
+<span class="c1"># Arrange the Data in the Yearly format</span>
 <span class="n">calender_freq_annual</span> <span class="o">=</span> <span class="n">calender_freq</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1">#This Data shows the number of reservations per year from calendar data</span>
 <span class="n">calender_freq_annual</span>
 </pre></div>
 
@@ -13402,7 +13546,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13466,24 +13610,204 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="In-which-Season-of-the-Year,-the-occupancy-is-more-?">In which Season of the Year, the occupancy is more ?<a class="anchor-link" href="#In-which-Season-of-the-Year,-the-occupancy-is-more-?">&#182;</a></h1>
+<h1 id="Prepare-Data">Prepare Data<a class="anchor-link" href="#Prepare-Data">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="---For-1st-Question---">-- For 1st Question --<a class="anchor-link" href="#---For-1st-Question---">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Select the year 2015 from the Data</span>
-<span class="n">reservation_frequency_2015</span> <span class="o">=</span> <span class="n">frequency</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2015&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_data1</span><span class="p">(</span><span class="n">reviews</span><span class="p">):</span>
 
-<span class="c1"># Sum of the Reservations by Month</span>
-<span class="n">reservation_2015_month</span> <span class="o">=</span> <span class="n">reservation_frequency_2015</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="c1"># For No of Reservations </span>
+    <span class="n">freq_count</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+    <span class="c1"># For Index</span>
+    <span class="n">freq_index</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
 
-<span class="n">reservation_2015_month</span><span class="p">[</span><span class="s1">&#39;% Reservations&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">reservation_2015_month</span><span class="p">[</span><span class="s1">&#39;No_of_Reservations&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="o">/</span><span class="n">reservation_2015_month</span><span class="p">[</span><span class="s2">&quot;No_of_Reservations&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="c1"># Combining into a Dataframe</span>
+    <span class="n">frequency</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">freq_count</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">freq_index</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;No_of_Reservations&#39;</span><span class="p">])</span>
+    <span class="c1"># Arrange the Data in the Yearly format</span>
+    <span class="n">reservation_frequency_annual</span> <span class="o">=</span> <span class="n">frequency</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="c1">#This Data shows the number of reservations per year from reviews data</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">reservation_frequency_annual</span><span class="p">)</span>
 
-<span class="n">reservation_2015_month</span>
+    <span class="c1"># Select the year 2015 from the Data</span>
+    <span class="n">reservation_frequency_2015</span> <span class="o">=</span> <span class="n">frequency</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2015&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Sum of the Reservations by Month</span>
+    <span class="n">reservation_2015_month</span> <span class="o">=</span> <span class="n">reservation_frequency_2015</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+    <span class="c1">#Calculating the percentage reservations in 2015 for every month</span>
+    <span class="n">reservation_2015_month</span><span class="p">[</span><span class="s1">&#39;% Reservations&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">reservation_2015_month</span><span class="p">[</span><span class="s1">&#39;No_of_Reservations&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="o">/</span><span class="n">reservation_2015_month</span><span class="p">[</span><span class="s2">&quot;No_of_Reservations&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+    <span class="c1">#This data has No_of_Reservations and percent share of reservations for every month in 2015</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">reservation_2015_month</span><span class="p">)</span> 
+    
+    <span class="k">return</span> <span class="n">reservation_2015_month</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="---For-2nd-Question---">-- For 2nd Question --<a class="anchor-link" href="#---For-2nd-Question---">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_data2</span><span class="p">(</span><span class="n">calendar</span><span class="p">):</span>
+    <span class="c1"># Set the date to index</span>
+    <span class="n">calendar</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Get the data for year 2016</span>
+    <span class="n">data_2016</span> <span class="o">=</span> <span class="n">calendar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2016&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Calculating the Percentage of Missing Values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data_2016</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+
+    <span class="c1"># Dropping Null values</span>
+    <span class="n">data_2016_dropna</span> <span class="o">=</span> <span class="n">data_2016</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+    <span class="c1"># Clean the Price Column</span>
+    <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
+    <span class="n">data_2016_dropna</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="p">[[</span><span class="s1">&#39;price&#39;</span><span class="p">]]</span>
+
+    <span class="n">data_2016_dropna</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+    <span class="c1"># Resemple data by month</span>
+    <span class="n">data_2016_month</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="c1"># difference between the price mean per month and the price mean</span>
+    <span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;Difference&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+    <span class="c1"># Print data</span>
+    <span class="k">return</span> <span class="n">data_2016_month</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="----for-3rd-question----">--- for 3rd question ---<a class="anchor-link" href="#----for-3rd-question----">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_data3</span><span class="p">(</span><span class="n">listings</span><span class="p">):</span>
+    <span class="n">listings_df</span> <span class="o">=</span> <span class="n">listings</span><span class="p">[[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">]]</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">listings_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+    <span class="n">listings_df</span> <span class="o">=</span> <span class="n">listings_df</span><span class="p">[</span><span class="n">listings_df</span><span class="o">.</span><span class="n">city</span> <span class="o">!=</span> <span class="s1">&#39;西雅图&#39;</span><span class="p">]</span>
+    <span class="n">neighbour_count</span> <span class="o">=</span> <span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">:</span> <span class="n">neighbour_count</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">10</span><span class="p">],</span><span class="s1">&#39;Request_Percent&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="o">*</span><span class="n">neighbour_count</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">/</span><span class="n">neighbour_count</span><span class="o">.</span><span class="n">sum</span><span class="p">()})</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="----for-4th-question----">--- for 4th question ---<a class="anchor-link" href="#----for-4th-question----">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_data4</span><span class="p">(</span><span class="n">listings</span><span class="p">):</span>
+    
+    <span class="n">feature_data</span> <span class="o">=</span> <span class="n">listings</span><span class="p">[[</span><span class="s1">&#39;neighbourhood_group_cleansed&#39;</span><span class="p">,</span><span class="s1">&#39;property_type&#39;</span><span class="p">,</span><span class="s1">&#39;room_type&#39;</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">]]</span>
+    
+    <span class="c1"># Imputation of Nulls with the Median value</span>
+    <span class="c1"># Reason behind choosing median over mean is that the mean was in a decimals e.g: 2.6, 3.5</span>
+    <span class="c1">#  but the median value comes in the whole number eg: 5.0, 6.0 </span>
+    <span class="n">feature_data</span><span class="o">.</span><span class="n">bathrooms</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">bathrooms</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="n">feature_data</span><span class="o">.</span><span class="n">bedrooms</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">bedrooms</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+    
+    <span class="c1"># Imputation of Nulls with the Mode value</span>
+    <span class="c1"># For Categorical datatypes imputation is done with Mode value</span>
+    <span class="n">feature_data</span><span class="o">.</span><span class="n">property_type</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">property_type</span><span class="o">.</span><span class="n">mode</span><span class="p">(),</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+    
+    <span class="c1"># Normalising the accommodates, bathrooms, bedrooms columns </span>
+    <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+    <span class="n">min_max_scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+    
+    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;accommodates&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;accommodates&#39;</span><span class="p">]])</span>
+    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">]])</span>
+    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">]])</span>
+    
+    <span class="c1"># Clean the Special characters</span>
+    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
+    
+    <span class="c1"># Make Dummy variables for categorical columns</span>
+    <span class="n">feature_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">feature_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;neighbourhood_group_cleansed&#39;</span><span class="p">,</span><span class="s1">&#39;property_type&#39;</span><span class="p">,</span><span class="s1">&#39;room_type&#39;</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">feature_data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="----for-5th-Question----">--- for 5th Question ---<a class="anchor-link" href="#----for-5th-Question----">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Not Required as the Latitude and Longitude columns don't have Nulls</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.-In-which-Season-of-the-Year,-the-occupancy-is-more-?">1. In which Season of the Year, the occupancy is more ?<a class="anchor-link" href="#1.-In-which-Season-of-the-Year,-the-occupancy-is-more-?">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reservation_2015_month</span> <span class="o">=</span> <span class="n">get_data1</span><span class="p">(</span><span class="n">reviews</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13496,11 +13820,79 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>No_of_Reservations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2009-12-31</th>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>2010-12-31</th>
+      <td>254</td>
+    </tr>
+    <tr>
+      <th>2011-12-31</th>
+      <td>1169</td>
+    </tr>
+    <tr>
+      <th>2012-12-31</th>
+      <td>3251</td>
+    </tr>
+    <tr>
+      <th>2013-12-31</th>
+      <td>7077</td>
+    </tr>
+    <tr>
+      <th>2014-12-31</th>
+      <td>20365</td>
+    </tr>
+    <tr>
+      <th>2015-12-31</th>
+      <td>52493</td>
+    </tr>
+    <tr>
+      <th>2016-12-31</th>
+      <td>223</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -13597,7 +13989,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Bar plot of Month vs Reviews percentage</span>
@@ -13645,174 +14037,29 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="How-much-the-Prices-change-per-month-?">How much the Prices change per month ?<a class="anchor-link" href="#How-much-the-Prices-change-per-month-?">&#182;</a></h1>
+<p>From the above graph we can conclude that</p>
+<ul>
+<li>the August month has the highest Engagement of Customers which shows that the Occupancy is the highest in August as compared to the rest of the year.</li>
+<li>Next, the lowest occupancy is in February where the AirBnBs aren’t used by people in Seattle.</li>
+<li>We can also conclude that the summers have most occupancy. It may be because people go to vacations more.</li>
+</ul>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's Study the Price change per month in 2016</p>
-
+<h1 id="2.-How-much-the-Prices-change-per-month-?">2. How much the Prices change per month ?<a class="anchor-link" href="#2.-How-much-the-Prices-change-per-month-?">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Set the date to index</span>
-<span class="n">calendar</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span>
-
-<span class="c1"># Get the data for year 2016</span>
-<span class="n">data_2016</span> <span class="o">=</span> <span class="n">calendar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2016&#39;</span><span class="p">]</span>
-
-<span class="c1"># Calculating the Percentage of Missing Values</span>
-<span class="n">data_2016</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>listing_id    0.000000
-date          0.000000
-price         0.329806
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dropping Null values</span>
-<span class="n">data_2016_dropna</span> <span class="o">=</span> <span class="n">data_2016</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-
-<span class="c1"># Clean the Price Column</span>
-<span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
-<span class="n">data_2016_dropna</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="p">[[</span><span class="s1">&#39;price&#39;</span><span class="p">]]</span>
-
-<span class="n">data_2016_dropna</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:5: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &#34;&#34;&#34;
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>price</th>
-    </tr>
-    <tr>
-      <th>date</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2016-01-04</th>
-      <td>85.0</td>
-    </tr>
-    <tr>
-      <th>2016-01-05</th>
-      <td>85.0</td>
-    </tr>
-    <tr>
-      <th>2016-01-13</th>
-      <td>85.0</td>
-    </tr>
-    <tr>
-      <th>2016-01-14</th>
-      <td>85.0</td>
-    </tr>
-    <tr>
-      <th>2016-01-18</th>
-      <td>85.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s see the Maximum, Minimum and mean price </span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Minimum : &quot;</span><span class="p">,</span>  <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum: &quot;</span><span class="p">,</span>  <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean: &quot;</span><span class="p">,</span>  <span class="n">data_2016_dropna</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_2016_month</span> <span class="o">=</span> <span class="n">get_data2</span><span class="p">(</span><span class="n">calendar</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13829,9 +14076,26 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Minimum :  10.0
-Maximum:  1650.0
-Mean:  137.95137504252597
+<pre>listing_id    0.000000
+date          0.000000
+price         0.329806
+dtype: float64
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  from ipykernel import kernelapp as app
 </pre>
 </div>
 </div>
@@ -13842,135 +14106,7 @@ Mean:  137.95137504252597
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Resemple data by month</span>
-<span class="n">data_2016_month</span> <span class="o">=</span> <span class="n">data_2016_dropna</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="c1"># difference between the price mean per month and the price mean</span>
-<span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;Difference&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data_2016_month</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-
-<span class="c1"># Print data</span>
-<span class="n">data_2016_month</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>price</th>
-      <th>Difference</th>
-    </tr>
-    <tr>
-      <th>date</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2016-01-31</th>
-      <td>121.568409</td>
-      <td>-16.147787</td>
-    </tr>
-    <tr>
-      <th>2016-02-29</th>
-      <td>124.293927</td>
-      <td>-13.422269</td>
-    </tr>
-    <tr>
-      <th>2016-03-31</th>
-      <td>128.644488</td>
-      <td>-9.071709</td>
-    </tr>
-    <tr>
-      <th>2016-04-30</th>
-      <td>135.097005</td>
-      <td>-2.619191</td>
-    </tr>
-    <tr>
-      <th>2016-05-31</th>
-      <td>139.538183</td>
-      <td>1.821986</td>
-    </tr>
-    <tr>
-      <th>2016-06-30</th>
-      <td>147.473137</td>
-      <td>9.756941</td>
-    </tr>
-    <tr>
-      <th>2016-07-31</th>
-      <td>152.094150</td>
-      <td>14.377954</td>
-    </tr>
-    <tr>
-      <th>2016-08-31</th>
-      <td>150.656594</td>
-      <td>12.940398</td>
-    </tr>
-    <tr>
-      <th>2016-09-30</th>
-      <td>143.255949</td>
-      <td>5.539752</td>
-    </tr>
-    <tr>
-      <th>2016-10-31</th>
-      <td>137.031939</td>
-      <td>-0.684257</td>
-    </tr>
-    <tr>
-      <th>2016-11-30</th>
-      <td>135.688738</td>
-      <td>-2.027458</td>
-    </tr>
-    <tr>
-      <th>2016-12-31</th>
-      <td>137.251835</td>
-      <td>-0.464361</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the Price Difference vs Months</span>
@@ -14032,277 +14168,16 @@ Mean:  137.95137504252597
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-are-the-top-favorite-Neighborhoods-in-Seattle-?">What are the top favorite Neighborhoods in Seattle ?<a class="anchor-link" href="#What-are-the-top-favorite-Neighborhoods-in-Seattle-?">&#182;</a></h1>
+<h1 id="3.-What-are-the-top-favorite-Neighborhoods-in-Seattle-?">3. What are the top favorite Neighborhoods in Seattle ?<a class="anchor-link" href="#3.-What-are-the-top-favorite-Neighborhoods-in-Seattle-?">&#182;</a></h1>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Choosing the required columns</span>
-<span class="n">listings_df</span> <span class="o">=</span> <span class="n">listings</span><span class="p">[[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">]]</span>
-
-<span class="n">listings_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>neighbourhood</th>
-      <th>city</th>
-      <th>state</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All the cities in the dataset</span>
-<span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Seattle                  3810
-West Seattle                2
-Seattle                     2
-西雅图                         1
-Ballard, Seattle            1
-Phinney Ridge Seattle       1
-seattle                     1
-Name: city, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>WA    3817
-wa       1
-Name: state, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cleaning the Dataset a</span>
-<span class="n">listings_df</span> <span class="o">=</span> <span class="n">listings_df</span><span class="p">[</span><span class="n">listings_df</span><span class="o">.</span><span class="n">city</span> <span class="o">!=</span> <span class="s1">&#39;西雅图&#39;</span><span class="p">]</span>
-<span class="n">listings_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>neighbourhood</th>
-      <th>city</th>
-      <th>state</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Queen Anne</td>
-      <td>Seattle</td>
-      <td>WA</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Getting the top favourite Neighbourhoods in Seattle</span>
-<span class="n">neighbour_count</span> <span class="o">=</span> <span class="n">listings_df</span><span class="p">[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">:</span> <span class="n">neighbour_count</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">10</span><span class="p">],</span><span class="s1">&#39;Request_Percent&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="o">*</span><span class="n">neighbour_count</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">/</span><span class="n">neighbour_count</span><span class="o">.</span><span class="n">sum</span><span class="p">()})</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">get_data3</span><span class="p">(</span><span class="n">listings</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14315,11 +14190,79 @@ Name: state, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>neighbourhood</th>
+      <th>city</th>
+      <th>state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Queen Anne</td>
+      <td>Seattle</td>
+      <td>WA</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -14457,6 +14400,7 @@ Name: state, dtype: int64</pre>
 <p>From the Above Analysis we conclude that :</p>
 <ul>
 <li>Capitol Hill is the most favourite nieghbourhood in Seattle which has the <strong>10%</strong> of all the requests.</li>
+<li>Ballard and Belltown are also popular among the Customers.</li>
 </ul>
 
 </div>
@@ -14465,7 +14409,7 @@ Name: state, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-are-the-key-Factors-that-influence-the-Price-of-an-Airbnb-?">What are the key Factors that influence the Price of an Airbnb ?<a class="anchor-link" href="#What-are-the-key-Factors-that-influence-the-Price-of-an-Airbnb-?">&#182;</a></h1>
+<h1 id="Data-Modeling">Data Modeling<a class="anchor-link" href="#Data-Modeling">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14474,43 +14418,7 @@ Name: state, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_data</span><span class="p">(</span><span class="n">listings</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    This function cleans the listings data </span>
-<span class="sd">    </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    
-    <span class="n">feature_data</span> <span class="o">=</span> <span class="n">listings</span><span class="p">[[</span><span class="s1">&#39;neighbourhood_group_cleansed&#39;</span><span class="p">,</span><span class="s1">&#39;property_type&#39;</span><span class="p">,</span><span class="s1">&#39;room_type&#39;</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">]]</span>
-    <span class="n">feature_data</span><span class="o">.</span><span class="n">bathrooms</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">bathrooms</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-    <span class="n">feature_data</span><span class="o">.</span><span class="n">bedrooms</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">bedrooms</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-    <span class="n">feature_data</span><span class="o">.</span><span class="n">property_type</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">feature_data</span><span class="o">.</span><span class="n">property_type</span><span class="o">.</span><span class="n">mode</span><span class="p">(),</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-    
-    <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
-    <span class="n">min_max_scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
-    
-    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;accommodates&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;accommodates&#39;</span><span class="p">]])</span>
-    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">]])</span>
-    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_max_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">feature_data</span><span class="p">[[</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">]])</span>
-    
-    <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
-    
-    <span class="n">feature_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">feature_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;neighbourhood_group_cleansed&#39;</span><span class="p">,</span><span class="s1">&#39;property_type&#39;</span><span class="p">,</span><span class="s1">&#39;room_type&#39;</span><span class="p">])</span>
-    
-    <span class="k">return</span> <span class="n">feature_data</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_data</span> <span class="o">=</span> <span class="n">clean_data</span><span class="p">(</span><span class="n">listings</span><span class="p">)</span>
-<span class="n">feature_data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_data</span> <span class="o">=</span> <span class="n">clean_data4</span><span class="p">(</span><span class="n">listings</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14532,24 +14440,22 @@ A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   self._update_inplace(new_data)
-D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:15: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  from ipykernel import kernelapp as app
-D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:16: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  app.launch_new_instance()
-D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:17: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:19: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:20: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:21: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+D:\Installs\anaconda3\lib\site-packages\ipykernel_launcher.py:24: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -14557,6 +14463,26 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
@@ -14888,7 +14814,91 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Splitting the data </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">feature_data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;price&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
+
+<span class="c1"># train and test - x and y</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># linear regression model building</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">pred</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">importance_df</span><span class="p">(</span><span class="n">feature_data</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This function gives the Importance with Feature Names</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+    <span class="c1"># Splitting the data </span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">feature_data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;price&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># train and test - x and y</span>
+    <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+    <span class="c1"># linear regression model building</span>
+    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+    <span class="n">lm</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+    <span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="c1"># taking the importance of features and column names and sorting into a data frame</span>
+    <span class="n">coefficients</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Feature&#39;</span><span class="p">:</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="s1">&#39;Importance&#39;</span><span class="p">:</span> <span class="n">lm</span><span class="o">.</span><span class="n">coef_</span><span class="p">})</span>
+    <span class="n">plot_data</span> <span class="o">=</span> <span class="n">coefficients</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Importance&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">15</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">plot_data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Evaluate-the-Results">Evaluate the Results<a class="anchor-link" href="#Evaluate-the-Results">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean Squared Error: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">))</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean Absoulte Error: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">))</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R2 Score: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">))</span> <span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14901,7 +14911,54 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mean Squared Error: 3442.4887813296405
+Mean Absoulte Error: 36.26287645428383
+R2 Score: 0.5758551686160358
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>From the results we conclude that Mean Squared Error: 3442.48, Mean Absoulte Error: 36.26 and R2 Score: 0.575 are the final results of the model.</li>
+<li>However, the reuslts can be Improved by using XGBoost, Light GBM, CatBoost Regressors.</li>
+<li>Hyperparameter tuning may also improve the scores.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top 10 feature importance</span>
+<span class="n">importance_df</span> <span class="o">=</span> <span class="n">importance_df</span><span class="p">(</span><span class="n">feature_data</span><span class="p">)</span>
+<span class="n">importance_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14924,297 +14981,88 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>accommodates</th>
-      <th>bathrooms</th>
-      <th>bedrooms</th>
-      <th>price</th>
-      <th>neighbourhood_group_cleansed_Ballard</th>
-      <th>neighbourhood_group_cleansed_Beacon Hill</th>
-      <th>neighbourhood_group_cleansed_Capitol Hill</th>
-      <th>neighbourhood_group_cleansed_Cascade</th>
-      <th>neighbourhood_group_cleansed_Central Area</th>
-      <th>neighbourhood_group_cleansed_Delridge</th>
-      <th>...</th>
-      <th>property_type_House</th>
-      <th>property_type_Loft</th>
-      <th>property_type_Other</th>
-      <th>property_type_Tent</th>
-      <th>property_type_Townhouse</th>
-      <th>property_type_Treehouse</th>
-      <th>property_type_Yurt</th>
-      <th>room_type_Entire home/apt</th>
-      <th>room_type_Private room</th>
-      <th>room_type_Shared room</th>
+      <th>Feature</th>
+      <th>Importance</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>0.200000</td>
-      <td>0.1250</td>
-      <td>0.142857</td>
-      <td>85.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>2</th>
+      <td>bedrooms</td>
+      <td>230.951062</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.200000</td>
-      <td>0.1250</td>
-      <td>0.142857</td>
-      <td>150.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <td>bathrooms</td>
+      <td>223.645553</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>0.666667</td>
-      <td>0.5625</td>
-      <td>0.714286</td>
-      <td>975.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>22</th>
+      <td>property_type_Boat</td>
+      <td>189.007750</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>0.133333</td>
-      <td>0.1250</td>
-      <td>0.000000</td>
-      <td>100.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>0</th>
+      <td>accommodates</td>
+      <td>139.553904</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>0.333333</td>
-      <td>0.2500</td>
-      <td>0.428571</td>
-      <td>450.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>25</th>
+      <td>property_type_Camper/RV</td>
+      <td>80.845868</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
+      <th>34</th>
+      <td>property_type_Treehouse</td>
+      <td>48.761797</td>
     </tr>
     <tr>
-      <th>3813</th>
-      <td>0.333333</td>
-      <td>0.2500</td>
-      <td>0.428571</td>
-      <td>359.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>30</th>
+      <td>property_type_Loft</td>
+      <td>43.643104</td>
     </tr>
     <tr>
-      <th>3814</th>
-      <td>0.200000</td>
-      <td>0.1250</td>
-      <td>0.142857</td>
-      <td>79.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>9</th>
+      <td>neighbourhood_group_cleansed_Downtown</td>
+      <td>38.081060</td>
     </tr>
     <tr>
-      <th>3815</th>
-      <td>0.066667</td>
-      <td>0.1250</td>
-      <td>0.142857</td>
-      <td>93.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>36</th>
+      <td>room_type_Entire home/apt</td>
+      <td>34.672836</td>
     </tr>
     <tr>
-      <th>3816</th>
-      <td>0.066667</td>
-      <td>0.1250</td>
-      <td>0.000000</td>
-      <td>99.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>35</th>
+      <td>property_type_Yurt</td>
+      <td>32.235656</td>
     </tr>
     <tr>
-      <th>3817</th>
-      <td>0.133333</td>
-      <td>0.1875</td>
-      <td>0.285714</td>
-      <td>87.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
+      <th>6</th>
+      <td>neighbourhood_group_cleansed_Cascade</td>
+      <td>31.954212</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>property_type_Bed &amp; Breakfast</td>
+      <td>27.880747</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>neighbourhood_group_cleansed_Queen Anne</td>
+      <td>25.940990</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>neighbourhood_group_cleansed_Capitol Hill</td>
+      <td>23.452309</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>property_type_Chalet</td>
+      <td>23.408582</td>
     </tr>
   </tbody>
 </table>
-<p>3818 rows × 40 columns</p>
 </div>
 </div>
 
@@ -15223,55 +15071,17 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-What-are-the-key-Factors-that-influence-the-Price-of-an-Airbnb-?">4. What are the key Factors that influence the Price of an Airbnb ?<a class="anchor-link" href="#4.-What-are-the-key-Factors-that-influence-the-Price-of-an-Airbnb-?">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">importance_df</span><span class="p">(</span><span class="n">feature_data</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    This function gives the Importance with Feature Names</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">feature_data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;price&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">feature_data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
-    <span class="c1"># train and test - x and y</span>
-    <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-    <span class="c1"># linear regression</span>
-    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-    <span class="n">lm</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
-    <span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-    <span class="n">coefficients</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Feature&#39;</span><span class="p">:</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="s1">&#39;Importance&#39;</span><span class="p">:</span> <span class="n">lm</span><span class="o">.</span><span class="n">coef_</span><span class="p">})</span>
-    <span class="n">plot_data</span> <span class="o">=</span> <span class="n">coefficients</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Importance&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">15</span><span class="p">]</span>
-
-    <span class="k">return</span> <span class="n">plot_data</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">importance_df</span> <span class="o">=</span> <span class="n">importance_df</span><span class="p">(</span><span class="n">feature_data</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plotting features with Importance</span>
@@ -15319,9 +15129,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Above graph shows that</p>
+<p>Above graph shows that :</p>
 <ul>
-<li>bedrooms have high importance in influencing price, meaning more Number of Bedrooms in an Airbnb more is the Price.</li>
+<li>Bedrooms and Bathrooms have high importance in influencing price, meaning more Number of Bedrooms in an AirBnB more is the Price of the Stay.</li>
+<li>Boat Properties also have more impact followed by Camping Properties.</li>
 </ul>
 
 </div>
@@ -15330,13 +15141,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="How-the-AirBnBs-are-distributed-in-the-city-?">How the AirBnBs are distributed in the city ?<a class="anchor-link" href="#How-the-AirBnBs-are-distributed-in-the-city-?">&#182;</a></h1>
+<h1 id="5.-How-the-AirBnBs-are-distributed-in-the-city-?">5. How the AirBnBs are distributed in the city ?<a class="anchor-link" href="#5.-How-the-AirBnBs-are-distributed-in-the-city-?">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
