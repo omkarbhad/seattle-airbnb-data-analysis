@@ -10,8 +10,9 @@ Make sure the following Libraries are Installed
 - [Seaborn](https://seaborn.pydata.org/)
 - [scikit-learn](http://scikit-learn.org/stable)
 
-# Project Overview 
+# Project Motivation 
 - For this project I had to choose a Dataset and then pose questions related to business or real-world applications of how the data could be used.
+- Follows the **CRISP-DM** Process while analyzing their data.
 
 # Data Selection
 I used the AirBnB's Data which is available on [Kaggle](https://www.kaggle.com/airbnb/seattle)
@@ -20,9 +21,10 @@ I used the AirBnB's Data which is available on [Kaggle](https://www.kaggle.com/a
 Data Various Data Preprocessing Techniques are used to Clean the Data.
 - Removal of NAs 
 - Handling the Categorical data with Dummy Varibles
+- Normalising the Data with MinMaxScaler
 
 # Modeling 
-I used Linear Regression for getting the Important Features from the Listings Dataset, beacause it is one of the most simple and powerful **Regression** Algorithm.
+I used **Linear Regression** for getting the Important Features from the Listings Dataset, beacause it is one of the most simple and powerful Regression Algorithm.
 
 # Visualization
 For this part, I used Seaborn and Matplotlib which are most popular visualisation libraries available.
