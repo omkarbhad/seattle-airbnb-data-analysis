@@ -1,6 +1,4 @@
-# Seattle AirBnB Data Analysis 
-
-[Medium Blog Post Link](https://medium.com/@omkarbhad66/seattle-airbnbs-data-analysis-that-every-investor-must-know-8a25a694389e)
+# &middot;Seattle AirBnB Data Analysis &middot;
 
 # Installation
 - Python 3
@@ -28,6 +26,17 @@ I used Linear Regression for getting the Important Features from the Listings Da
 
 # Visualization
 For this part, I used Seaborn and Matplotlib which are most popular visualisation libraries available.
+
+# Business Questions 
+The following Questions were answered in the Blog:
+- In which Season of the Year, the occupancy is more ?
+- How much the Prices change per month ?
+- What are the top favorite Neighborhoods in Seattle ?
+- What are the key Factors that influence the Price of an AirBnB ?
+- How the AirBnBs are distributed in the city ?
+
+# Blog Post
+[Medium Blog Post Link](https://medium.com/@omkarbhad66/seattle-airbnbs-data-analysis-that-every-investor-must-know-8a25a694389e)
 
 # Credits 
 
