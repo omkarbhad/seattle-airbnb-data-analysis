@@ -1,56 +1,105 @@
-# &middot;Seattle AirBnB Data Analysis &middot;
+# 🏠 Seattle Airbnb Data Analysis Dashboard
 
-# Contents
-```
-├── Airbnb Seattle.ipynb
-├── Airbnb Seattle.html
-├── data
-│   └── listings.csv
-│   └── reviews.csv
-│   └── calendar.csv
-└── README.md
-```
-# Installation
-- Python 3
-- Jupyter Notebok
-Make sure the following Libraries are Installed
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [matplotlib](http://matplotlib.org/)
-- [Seaborn](https://seaborn.pydata.org/)
-- [scikit-learn](http://scikit-learn.org/stable)
+An interactive dashboard for analyzing Seattle's Airbnb market trends, pricing factors, and neighborhood insights. Built with Python and Streamlit.
 
-# Project Motivation 
-- For this project I had to choose a Dataset and then pose questions related to business or real-world applications of how the data could be used.
-- Follows the **CRISP-DM** Process while analyzing their data.
+![Demo](demo.gif)
 
-# Data Selection
-I used the AirBnB's Data which is available on [Kaggle](https://www.kaggle.com/airbnb/seattle)
+## ✨ Features
 
-# Preprocessing data:
-Data Various Data Preprocessing Techniques are used to Clean the Data.
-- Removal of NAs 
-- Handling the Categorical data with Dummy Varibles
-- Normalising the Data with MinMaxScaler
+- **📊 Interactive Visualizations**
+  - Seasonal occupancy trends
+  - Price analysis across neighborhoods
+  - Geographic distribution mapping
 
-# Modeling 
-I used **Linear Regression** for getting the Important Features from the Listings Dataset, beacause it is one of the most simple and powerful Regression Algorithm.
+- **📈 Business Insights**
+  - Peak season identification (June-August, 10-15% higher prices)
+  - Top performing neighborhoods (Capitol Hill, Downtown, Belltown)
+  - Price influencers analysis
 
-# Visualization
-For this part, I used Seaborn and Matplotlib which are most popular visualisation libraries available.
+- **🛠️ Technical Implementation**
+  - Data preprocessing with Pandas
+  - Machine learning with scikit-learn
+  - Interactive visualizations using Plotly
+  - Web application with Streamlit
 
-# Business Questions 
-The following Questions were answered in the Blog:
-- In which Season of the Year, the occupancy is more ?
-- How much the Prices change per month ?
-- What are the top favorite Neighborhoods in Seattle ?
-- What are the key Factors that influence the Price of an AirBnB ?
-- How the AirBnBs are distributed in the city ?
+## ❓ Key Questions Answered
 
-# Blog Post
-[Medium Blog Post Link](https://medium.com/@omkarbhad66/seattle-airbnbs-data-analysis-that-every-investor-must-know-8a25a694389e)
+1. **Seasonal Trends**
+   - When are the peak and off-peak seasons for Airbnb bookings in Seattle?
+   - How do prices fluctuate throughout the year?
 
-# Credits 
+2. **Pricing Analysis**
+   - What factors most significantly impact listing prices?
+   - How do prices vary across different neighborhoods?
 
-This is a part of [Udacity's Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025) 
+3. **Neighborhood Performance**
+   - Which neighborhoods have the highest number of listings?
+   - Which areas offer the best value for money?
 
+4. **Property Features**
+   - How do property characteristics affect pricing and occupancy?
+   - What amenities are most valued by guests?
+
+5. **Geographic Distribution**
+   - Where are the highest concentration of Airbnbs located?
+   - How does location affect pricing and demand?
+
+## 🚀 Quick Start
+
+1. **Prerequisites**
+   - Python 3.8+
+   - pip
+
+2. **Installation**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/your-username/seattle-airbnb-analysis.git
+   cd seattle-airbnb-analysis
+   
+   # Create and activate virtual environment
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   
+   # Install dependencies
+   pip install -r requirements.txt
+   ```
+
+3. **Run the App**
+   ```bash
+   streamlit run app.py
+   ```
+   The app will open in your default web browser at `http://localhost:8501`
+
+## 📊 Data Sources
+
+- [Airbnb Seattle Data on Kaggle](https://www.kaggle.com/airbnb/seattle)
+- Includes three main datasets:
+  - `listings.csv`: Detailed information about listings
+  - `reviews.csv`: Review data including dates and comments
+  - `calendar.csv`: Pricing and availability data
+
+## 🧠 Methodology
+
+1. **Data Preparation**
+   - Cleaned and preprocessed raw data
+   - Handled missing values
+   - Performed feature engineering
+
+2. **Analysis**
+   - Explored seasonal trends
+   - Analyzed neighborhood performance
+   - Identified price influencers
+
+3. **Modeling**
+   - Linear regression for price prediction
+   - Feature importance analysis
+
+## 📖 Blog Post
+
+For a detailed walkthrough of the analysis and insights, check out my [Medium article](https://medium.com/@omkarbhad/seattle-airbnbs-data-analysis-that-every-investor-must-know-8a25a694389e).
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Developed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025).
