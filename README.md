@@ -2,7 +2,7 @@
 
 An interactive dashboard for analyzing Seattle's Airbnb market trends, pricing factors, and neighborhood insights. Built with Python and Streamlit.
 
-![Demo](demo.gif)
+![Demo](https://github.com/omkarbhad/seattle-airbnb-data-analysis/raw/master/demo.gif)
 
 ## ✨ Features
 
