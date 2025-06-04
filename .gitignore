@@ -1,6 +1,3 @@
-# Ignore demo.gif as it's too large for GitHub
-demo.gif
-
 # System Files
 .DS_Store
 
